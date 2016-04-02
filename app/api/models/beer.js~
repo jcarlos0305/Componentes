@@ -1,0 +1,14 @@
+// Car Parts model
+
+'use strict';
+
+let mongoose = require('mongoose'),
+		Schema = mongoose.Schema;
+
+let	CarPartSchema = new Schema({
+	name: String,
+	type: String,
+	country: String
+});
+
+module.exports = mongoose.model('CarPart', CarPartSchema);
